@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FrangoBox</title>
+
+    <!-- fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: lightgray;
+      }
+      div {
+        background-color: #b80707;
+        color: white;
+        padding: 15px;
+        border-radius: 10px;
+        font: 400 1rem 'DM Sans', sans-serif;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+      .button {
+        background-color: green;
+        color: white; /*cor da letra */
+        margin-bottom: 15px; /*aumenta a distancia em baixo*/
+        border-radius: 15px; /*adiciona bordar no elemento */
+        text-align: center; /*alinha texto no centro */
+        font: 500 1rem 'DM Sans', sans-serif;
+        cursor: pointer; /*muda o ponteiro do teclado para mão, quando clicavel*/
+      }
+
+      .produto {
+        background-color: white;
+        color: black;
+        margin-bottom: 5px; /*aumenta a distancia em baixo*/
+        cursor: pointer;
+        border: 3px solid white;
+      }
+      .footer {
+        background-color: #b80707;
+        color: white;
+        padding: 25px;
+        font: 400 1rem 'DM Sans', sans-serif;
+        border-radius: 0px;
+        text-align: center;
+      }
+
+      img {
+        width: 150px;
+        border-radius: 5px;
+        float: right;
+      }
+
+      h1 {
+        margin: 0;
+        font: 700 1.875rem 'Poppins', sans-serif;
+      }
+      h2 {
+        margin: 0;
+        font-size: 18px;
+      }
+
+      h3 {
+        font-size: 30px;
+        margin-bottom: 5px;
+        font: 700 1.6rem 'Poppins', sans-serif;
+      }
+
+      h4 {
+        font-size: 20px;
+        margin-top: 0px;
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>FrangoBox</h1>
+      <h2>Monte o seu Box e receba em 15 minutos!</h2>
+    </div>
+
+    <h3>Escolha seu frango</h3>
+    <div id="frango1" class="produto" onclick="EscolherFrango1 ()">
+      <img
+        src="https://www.minervafoods.com/wp-content/uploads/2018/03/frango_frito-2.jpg"
+      />
+      <h4>Frango nº1</h4>
+      <p>10 tirinhas de frango + Molho Barbecue</p>
+      <p><strong>R$10,00</strong></p>
+    </div>
+
+    <div id="frango2" class="produto" onclick="EscolherFrango2 ()">
+      <img
+        src="https://www.minervafoods.com/wp-content/uploads/2018/03/frango_frito-2.jpg"
+      />
+      <h4>Frango nº2</h4>
+      <p>15 tirinhas de frango + Molho Barbecue</p>
+      <p><strong>R$15,00</strong></p>
+    </div>
+
+    <h3>Escolha sua Batata</h3>
+
+    <div id="batata1" class="produto" onclick="EscolherBatata1 ()">
+      <img
+        src="https://s2.glbimg.com/6TYFXwek9ZpNXFeOzas09KizMKk=/0x0:1280x853/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2020/T/K/Hh8h2GR96v392DAkAqyA/912c9713-321e-4dfd-bca9-888c05c5ce50.jpeg"
+      />
+      <h4>Batata nº01</h4>
+      <p>Batata frita Pequena</p>
+      <p><strong>R$2,00</strong></p>
+    </div>
+
+    <div id="batata2" class="produto" onclick="EscolherBatata2 ()">
+      <img
+        src="https://s2.glbimg.com/6TYFXwek9ZpNXFeOzas09KizMKk=/0x0:1280x853/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2020/T/K/Hh8h2GR96v392DAkAqyA/912c9713-321e-4dfd-bca9-888c05c5ce50.jpeg"
+      />
+      <h4>Batata nº02</h4>
+      <p>Batata Frita Média</p>
+      <p><strong>R$5,00</strong></p>
+    </div>
+
+    <h3>Escolha sua Bebida</h3>
+    <div id="refri1" class="produto" onclick="EscolherRefri1 ()">
+      <img
+        src="https://s2.glbimg.com/GUda5oj9xkd_yQNyn36mDn9XJmo=/620x455/e.glbimg.com/og/ed/f/original/2018/08/17/beber-refrigerante-todos-os-dias-esta-te-matando.jpg"
+      />
+      <h4>Bebida nº01</h4>
+      <p>Bebida Sabores 500ml</p>
+      <p><strong>R$5,00</strong></p>
+    </div>
+
+    <div id="refri2" class="produto" onclick="EscolherRedri2 ()">
+      <img
+        src="https://s2.glbimg.com/GUda5oj9xkd_yQNyn36mDn9XJmo=/620x455/e.glbimg.com/og/ed/f/original/2018/08/17/beber-refrigerante-todos-os-dias-esta-te-matando.jpg"
+      />
+      <h4>Bebida n°2</h4>
+      <p>Bebida Sabores 600ml</p>
+      <p><strong>R$6,00</strong></p>
+    </div>
+
+    <div id="finalizarPedido" class="button" onclick="FinalizarPedido ()">
+      <p>Finalizar Pedido</p>
+    </div>
+
+    <script>
+      let prato
+      let batata
+      let refrigerante
+
+      function EscolherFrango1() {
+        document.getElementById('frango1').style.borderColor = 'green'
+        document.getElementById('frango2').style.borderColor = 'white'
+
+        prato = 'Frango nº1'
+      }
+      function EscolherFrango2() {
+        document.getElementById('frango2').style.borderColor = 'green'
+        document.getElementById('frango1').style.borderColor = 'white'
+
+        prato = 'Frango nº2'
+      }
+
+      function EscolherBatata1() {
+        document.getElementById('batata1').style.borderColor = 'green'
+        document.getElementById('batata2').style.borderColor = 'white'
+
+        batata = 'Batata nº1'
+      }
+
+      function EscolherBatata2() {
+        document.getElementById('batata2').style.borderColor = 'green'
+        document.getElementById('batata1').style.borderColor = 'white'
+
+        batata = 'Batata nº2'
+      }
+
+      function EscolherRefri1() {
+        document.getElementById('refri1').style.borderColor = 'green'
+        document.getElementById('refri2').style.borderColor = 'white'
+
+        refrigerante = 'Refri nº1'
+      }
+
+      function EscolherRedri2() {
+        document.getElementById('refri2').style.borderColor = 'green'
+        document.getElementById('refri1').style.borderColor = 'white'
+
+        refrigerante = 'Refri nº2 '
+      }
+
+      function FinalizarPedido() {
+        let mensagem
+        mesagem =
+          'Gostaria de pedir ' + prato + ' e ' + batata + ' com ' + refrigerante
+
+        window.open('https://wa.me/+5521966154418?text=' + mensagem)
+      }
+    </script>
+
+    <footer>
+      <div class="footer">
+        <p>Tecnologia - Loop! Pedidos via Whatsapp</p>
+        <p>Todos os direitos reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>
